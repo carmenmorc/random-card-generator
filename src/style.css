@@ -12,28 +12,46 @@ body {
   position: relative;
   border-radius: 20px;
   box-shadow: 7px 7px 11px -4px rgb(0, 0, 0);
+  &:before {
+    font-size: 80pt;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 15px;
+    line-height: 0.9;
+  }
+
+  &:after {
+    font-size: 80pt;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 15px;
+    line-height: 1;
+  }
+
+  &.spade:before,
+  &.spade:after {
+    content: "\2660";
+  }
+  &.club:before,
+  &.club:after {
+    content: "\2663";
+  }
+  &.heart:before,
+  &.heart:after {
+    content: "\2665";
+    color: red;
+  }
+  &.diamond:before,
+  &.diamond:after {
+    content: "\2666";
+    color: red;
+  }
 }
 
 .number {
   font-size: 200pt;
   margin: auto;
   text-align: center;
-}
-
-.top-suit {
-  font-size: 80pt;
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin-left: 15px;
-  line-height: 0.9;
-}
-
-.bottom-suit {
-  font-size: 80pt;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  margin-right: 15px;
-  line-height: 1;
 }
