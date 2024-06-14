@@ -1,1 +1,39 @@
-@import "~bootstrap/dist/css/bootstrap.min.css";
+body {
+  background-color: rgb(20, 56, 31);
+}
+
+.card {
+  background-color: rgb(255, 252, 245);
+  margin: auto;
+  margin-top: 10%;
+  display: flex;
+  height: 470px;
+  width: 320px;
+  position: relative;
+  border-radius: 20px;
+  box-shadow: 7px 7px 11px -4px rgb(0, 0, 0);
+}
+
+.number {
+  font-size: 200pt;
+  margin: auto;
+  text-align: center;
+}
+
+.top-suit {
+  font-size: 80pt;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 15px;
+  line-height: 0.9;
+}
+
+.bottom-suit {
+  font-size: 80pt;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-right: 15px;
+  line-height: 1;
+}
